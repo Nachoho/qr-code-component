@@ -1,0 +1,109 @@
+:root{
+    --clr-card: hsl(0, 0%, 100%);
+    --clr-background: hsl(218, 17%, 91%);
+    --clr-primary-400: hsl(220, 15%, 55%);
+    --clr-primary-900: hsl(218, 44%, 22%);
+
+    --font: 'Outfit', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    margin: 3rem 1.5rem auto;
+    margin-bottom: 3rem;
+    background-color: var(--clr-background);
+}
+
+.card{
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+    background-color: var(--clr-card);
+
+    border-radius: 1.2rem;
+}
+
+.card-image{
+    border-radius: 1rem;
+}
+
+.card-title{
+    font-family: var(--font);
+    font-weight: var(--fw-bold);
+    align-self: center;
+
+    padding: 0 1.5rem;
+    margin: 1rem 0;
+    color: var(--clr-primary-900) ;
+}
+
+.card-paragraph{
+    font-family: var(--font);
+    font-weight: var(--fw-regular);
+    font-size: 15px;
+    color: var(--clr-primary-400);
+    padding: 0 1.5rem ;
+}
